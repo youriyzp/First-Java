@@ -30,12 +30,12 @@ public class MyPhoneBook {
             if (phoneNumbers[i]==null){
                 phoneNumbers[i]=new PhoneNumber(name,phone);
                 return;*/
-        for (int i = 0; i < phoneNumbers.length; i++) {
+      /*  for (int i = 0; i < phoneNumbers.length; i++) {
             if (phoneNumbers[i]==null){
                 phoneNumbers[i]=new PhoneNumber(addPhoneNumber();
                 return;
             }
-            Arrays.sort(phoneNumbers, new MyNameComparator <PhoneNumber>() {
+          /*  Arrays.sort(phoneNumbers, new MyNameComparator <PhoneNumber>() {
 
                 @Override
                 public int compare(PhoneNumber o1,
