@@ -18,9 +18,22 @@ public class MyPhoneBook {
 
     }
     public void sortByName(){
+        /*Comparator <MyPhoneBook> MyNameComparator =new Comparator<MyPhoneBook>() {
+            @Override
+            public int compare(MyPhoneBook o1, MyPhoneBook o2) {
+                return 0;
+            }
+        }
+*/
+
+        /*for (int i = 0;i < phoneNumbers.length; i++){
+            if (phoneNumbers[i]==null){
+                phoneNumbers[i]=new PhoneNumber(name,phone);
+                return;*/
         for (int i = 0; i < phoneNumbers.length; i++) {
             if (phoneNumbers[i]==null){
-                continue;
+                phoneNumbers[i]=new PhoneNumber(addPhoneNumber();
+                return;
             }
             Arrays.sort(phoneNumbers, new MyNameComparator <PhoneNumber>() {
 
@@ -106,6 +119,10 @@ public class MyPhoneBook {
             return "Телефонная книга: " +
                     "Имя='" + name + '\'' +
                     ", телефон='" + phone + '\'' ;
+        }
+
+        public Comparable<String> setName() {
+            return null;
         }
     }
 
