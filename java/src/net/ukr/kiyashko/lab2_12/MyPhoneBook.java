@@ -17,7 +17,7 @@ public class MyPhoneBook {
         }
 
     }
-    public void sortByName() {
+ /*   public void sortByName() {
        /* Comparator<MyPhoneBook> MyNameComparator = new Comparator<MyPhoneBook>() {
 
             @Override
@@ -35,7 +35,7 @@ public class MyPhoneBook {
             if (phoneNumbers[i]==null){
                 phoneNumbers[i]=new PhoneNumber(addPhoneNumber();
                 return;
-            }*/
+            }
           Arrays.sort(phoneNumbers, new MyNameComparator <PhoneNumber>() {
 
                 @Override
