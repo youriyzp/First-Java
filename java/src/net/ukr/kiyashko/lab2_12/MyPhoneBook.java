@@ -17,14 +17,15 @@ public class MyPhoneBook {
         }
 
     }
-    public void sortByName(){
-        /*Comparator <MyPhoneBook> MyNameComparator =new Comparator<MyPhoneBook>() {
+    public void sortByName() {
+       /* Comparator<MyPhoneBook> MyNameComparator = new Comparator<MyPhoneBook>() {
+
             @Override
             public int compare(MyPhoneBook o1, MyPhoneBook o2) {
                 return 0;
             }
         }
-*/
+    }
 
         /*for (int i = 0;i < phoneNumbers.length; i++){
             if (phoneNumbers[i]==null){
@@ -34,8 +35,8 @@ public class MyPhoneBook {
             if (phoneNumbers[i]==null){
                 phoneNumbers[i]=new PhoneNumber(addPhoneNumber();
                 return;
-            }
-          /*  Arrays.sort(phoneNumbers, new MyNameComparator <PhoneNumber>() {
+            }*/
+          Arrays.sort(phoneNumbers, new MyNameComparator <PhoneNumber>() {
 
                 @Override
                 public int compare(PhoneNumber o1,
@@ -80,7 +81,7 @@ public class MyPhoneBook {
         });
         System.out.println(Arrays.asList(phoneNumbers));
 */
-    }
+
     public void printPhoneBook() {
 
 
@@ -97,9 +98,13 @@ public class MyPhoneBook {
 
     }
 
-    class PhoneNumber {
+    class PhoneNumber implements Comparator<PhoneNumber>{
         String name;
         String phone;
+        public int  compare(MyPhoneBook.PhoneNumber o1, MyPhoneBook.PhoneNumber o2){
+            return o1.setName().compareTo(o2.name);
+        }
+
 
         public PhoneNumber(String name, String phone) {
             this.name = name;
