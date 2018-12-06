@@ -8,9 +8,9 @@ public class MyPhoneBook {
     PhoneNumber[] phoneNumbers = new PhoneNumber[10];
 
     public void addPhoneNumber(String name, String phone) {
-        for (int i = 0;i < phoneNumbers.length; i++){
-            if (phoneNumbers[i]==null){
-                phoneNumbers[i]=new PhoneNumber(name,phone);
+        for (int i = 0; i < phoneNumbers.length; i++) {
+            if (phoneNumbers[i] == null) {
+                phoneNumbers[i] = new PhoneNumber(name, phone);
                 return;
             }
 
@@ -85,9 +85,8 @@ public class MyPhoneBook {
     public void printPhoneBook() {
 
 
-
         for (int i = 0; i < phoneNumbers.length; i++) {
-            if (phoneNumbers[i]==null){
+            if (phoneNumbers[i] == null) {
                 continue;
             }
             System.out.println(phoneNumbers[i]);
@@ -98,10 +97,11 @@ public class MyPhoneBook {
 
     }
 
-    class PhoneNumber implements Comparator<PhoneNumber>{
+    class PhoneNumber implements Comparator<PhoneNumber> {
         String name;
         String phone;
-        public int  compare(MyPhoneBook.PhoneNumber o1, MyPhoneBook.PhoneNumber o2){
+
+        public int compare(MyPhoneBook.PhoneNumber o1, MyPhoneBook.PhoneNumber o2) {
             return o1.setName().compareTo(o2.name);
         }
 
@@ -123,7 +123,7 @@ public class MyPhoneBook {
         public String toString() {
             return "Телефонная книга: " +
                     "Имя='" + name + '\'' +
-                    ", телефон='" + phone + '\'' ;
+                    ", телефон='" + phone + '\'';
         }
 
         public Comparable<String> setName() {
