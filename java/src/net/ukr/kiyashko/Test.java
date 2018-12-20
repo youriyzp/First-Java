@@ -1,8 +1,21 @@
 package net.ukr.kiyashko;
 
+import java.util.Date;
+import java.util.Map;
+
 public  class Test {
    public static void main(String argv[]) {
-      int i=1;
+       double d1 = 5.0;
+       double d2 = 2.3;
+       double power = Math.pow(d1, d2);
+       System.out.println(power);
+       Map<String,String>props=System.getenv();
+       System.out.println(props.get("SystemDrive"));
+       Date date=new Date();
+       date.getTime();
+       System.out.println(date);
+      /*
+       int i=1;
       switch (i){
          case 0:
             System.out.println("zero");break;
