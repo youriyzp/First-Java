@@ -28,8 +28,8 @@ class JdbcStore {
             Product myach = new Product(1,"myach",120,tags);
             Product kukla = new Product(2,"kukla",150,new ArrayList<>());
             // TODO создать Заказ - new Purchase
-            Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-            Purchase zakaz = new Purchase(timestamp,"Tolik","Lilya",69059,2);
+
+            Purchase zakaz = new Purchase(new java.util.Date(),"Tolik","Zp",69059,bot.getId());
 
             // TODO создать несколько заказанных единиц  - new PurchaseItem
             PurchaseItem vesh1 = new PurchaseItem(1,2,300,1);
