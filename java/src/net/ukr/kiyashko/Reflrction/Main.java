@@ -27,4 +27,3 @@ public class Main {
             final Object result = aGetMethod.invoke(myClass1);
             System.out.println(result);*/
     }
-}
