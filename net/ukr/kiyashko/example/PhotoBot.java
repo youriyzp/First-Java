@@ -1,4 +1,4 @@
-package org.surovskiy.example;
+package net.ukr.kiyashko.example;
 
 import org.apache.commons.io.IOUtils;
 import org.json.JSONObject;

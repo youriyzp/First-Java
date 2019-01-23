@@ -1,4 +1,4 @@
-package org.surovskiy.example;
+package net.ukr.kiyashko.example;
 
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
